@@ -1,0 +1,5 @@
+[project]
+name = "culture_fit_bot"
+
+[tool.isort]
+profile = "black"

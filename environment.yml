@@ -1,0 +1,31 @@
+name: culture_fit_bot
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - joblib
+    - flask
+    - gunicorn
+    # - reppy
+    - anthropic
+    - pytest
+    - langchain
+    - python-dotenv
+    - isort
+    - beautifulsoup4
+    - requests
+    - numpy
+    - pandas
+    - matplotlib
+    - scikit-learn
+    - scipy
+    - seaborn
+    - jupyter
+    - notebook
+    - nltk
+    - spacy
+    - tiktoken
+    - pytesseract

@@ -1,0 +1,39 @@
+
+Building the evidence base for evidence-based decision-making
+
+We build tools that open up the messy black box of climate laws, policies and case law globally, helping decision-makers design more effective climate change strategies.
+Use our tools to quickly and easily find information on climate laws and policies.
+Open data and tools for climate policy and law research
+
+- Explore: Search through the complete text of thousands of climate change policy and law documents from every country.
+- Research: Easily find parts of documents that are relevant to what you’re looking for. Our AI tool saves time by automatically detecting and highlighting similar words.
+- Analyse: Compare different nations’ climate action plans, and explore climate laws and policies by sector.
+
+We are on a mission to map and analyse the global climate law and policy landscape to help drive the transition to a low-carbon, resilient and just world.
+
+The need for informed climate change policymaking
+
+Laws and policies are essential to slashing global emissions, building climate-resilient, adaptive communities and economies, and accounting for loss and damage from climate impacts.
+
+Yet data on existing climate policies and laws are currently hard to find and analyse. Documents and data are spread across diffuse resources in different languages, in inconsistent formats. This makes it difficult to learn from successes and mistakes and to develop ambitious ways forward.
+
+We are working to open up and make sense of that data to support informed policymaking, track progress and model policy risk. Use our open data tools for:
+
+- Policymaking: Carry out deep dives into a wide range of areas, assess policy options and identify best practices.
+- Policy tracking: Track global action and progress towards meeting the goals of the Paris Agreement.
+- Accountability: Assess policy choices, draw attention to insufficient action, and advocate for alternatives.
+- Risk modelling: Build law and policy metrics into risk models, and gain a better understanding of the regulatory environment.
+
+AI for climate law and policy research
+
+We use data science and artificial intelligence to map and analyse the world's climate change policies and laws, supporting a deep understanding of what works, where, and for whom.
+
+By turning documents into searchable, accessible and useful information, our work aims to advance global research efforts to understand the effectiveness of climate laws, policies and litigation.
+
+- Aggregate and sort: Bringing climate policy data together from diffuse resources - from government websites to climate negotiation documents.
+- Digest and analyse: Training AI algorithms to extract useful information from climate documents. This will help to pinpoint trends and highlight action gaps.
+- Expose and share: Building an open knowledge graph to map this information. This will enable climate policy evaluation, analysis and modelling. And ultimately, help to guide better decision-making.
+
+About Climate Policy Radar
+
+Climate Policy Radar is a not-for-profit climate startup. We are led by a team of leading experts in international climate law and policy, machine learning and software development.

@@ -1,0 +1,25 @@
+Hi <NAME>,
+
+How are you?
+
+As you were so communicative in our previous interactions, I thought I'd reach out with some questions I had about job hunting, if you don't mind.
+
+I read a bunch of articles like these: https://blog.jobheron.co.uk/6-hiring-challenges-businesses-face-and-how-to-overcome-them/
+
+And wanted to get your opinion on hiring challenges. It seems like the big 3 problems are:
+- Attracting the wrong applicants (Understandably, job seekers can get desperate for any job, and apply a shotgun approach to finding a job)
+- Hiring takes a long time (I'm been on both sides of this, but I was wondering what percentage of the process is taken up by filtering CVs, reading cover letters, and trying to establish culture fit)
+- Poor candidate experience (As you know, I like communicative recruiters, and then usually we're just rejected with a bland templatised email, whereas a bit of feedback would be great.)
+
+Do you agree that these are challenges?
+What are your (as agent/recruiter) biggest challenges?
+What percentage of the process is taken up by filtering CVs, reading cover letters, and trying to establish culture fit?
+Do you or companies use any tools or software to help with the above (filtering CVs, reading cover letters, and trying to establish culture fit)?
+If your answers are different for permanent roles and freelance/contracts, please specify.
+
+Thank you, and I know this is a lot to put on your plate, but I'm looking at building an AI-powered tool which will help companies find the right candidates, but just want to get a lay of the land first.
+
+Please do share this with your colleagues if you think they can add some insight/perspective.
+
+Kind regards,
+Juan
