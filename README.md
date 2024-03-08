@@ -1,17 +1,16 @@
 # Introduction
 
-Just had an idea: culture fit.
+A quick sketch of the AI-candidate-screener idea.
 
-A company wants to hire for a new role. But they'd get hundreds of CVs and cover letters.
+Main code is in `main.py` and it just concatenates text about:
 
-Have a system which can analyse the company's website (especially the culture bits: about us, the way we work, our values, etc).
+- the candidate
+- the company
+- the job
 
-Then, for each applicant, build up a comprehensive profile of the applicant:
-- analyse their CV
-- analyse their cover letter
-- analyse the content at any of the URLs in their CV/cover letter (e.g. it might point to their personal/hobby websites)
+...into a basic prompt, and gets a reponse.
 
-Then rank the matches, and write a report about the match/fit.
+A starting point for further enchancements.
 
 
 # Get started
