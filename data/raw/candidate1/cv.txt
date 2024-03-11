@@ -1,0 +1,59 @@
+Juan Uys
+Python Lead & ML Engineer (NVidia certified)
+Cheltenham, UK, (+44) 7702 783 956, juan+cv@uys.io
+https://www.linkedin.com/in/juan-m-uys/ 
+ABOUT
+20+ years experience and effective pattern matcher. I focus on what matters, and clearly communicate to stakeholders.
+Independent consultant for 10+ years, latterly with a focus on document understanding and data extraction
+EXPERIENCE
+pdfcrun.ch, Founder
+NOVEMBER 2013 - CURRENT
+“pdfcrunch turns PDFs into data”
+Document data extraction bespoke solutions, and consulting.
+Part of the NVidia Inception programme.
+Python and ML technologies; CV and NLP; on AWS and GCP.
+cytora.com, Consultant/ML Developer (remote)
+MARCH 2023 - JANUARY 2024
+Document understanding and data extraction. Reducing risk quote processing time, “RiskGPT”. Self-directed work and research, working with a small team.
+research into smaller open-source models for specific extraction tasks (3b-7b parameter models, applied: dolly; research: llama(+derivatives)/mistral/mixtral, mixtures of experts)
+prompt engineering (applied: zero/few-shot, chain-of-thought; research: prompt chaining, automatic reasoning, auto prompts, function calling)
+fine-tuning large foundational models (applied: Google's PaLM2/Vertex, Databricks; research: Amazon Bedrock) with applications in structured data extraction (fields, addresses), and singular field extraction ("single field experts")
+research into layout detection (LayoutXLM trained with DocLayNet/PubLayNet)
+Unleash Your Server (uys.io), Consultant (UK & remote)
+2013 - PRESENT
+Contract developer across government, energy, finance, health and edtech. A mixture of Python/Node.js/JVM technologies. Clients include O2, Logic Group (Barclaycard) (via Equal Experts), Tesco, and others:
+receipt scanner (backend + ML) built from scratch for #1 customer insights organisation DunnHumby
+expand platform for new territories (France/Spain/Texas) for Bulb
+data aggregation from disparate sources to build a government contracts database for the FCDO
+engineering team lead at Condé Nast, expanding team and platform for style.com
+Earlier career, UK & South Africa — Developer & team lead
+2002 - 2012
+Web developer and team lead in various industries including internet advertising, fashion, and consumer apps. Predominantly a backend Java developer. Programmer #2 at a startup which Google acquired (BeatThatQuote.com).
+CTO & Co-Founder, Pollarize.me, 2012-2013
+Senior Java Developer & Team Lead, Net-A-Porter.com, 2007-2013
+Software Engineer, BeatThatQuote.com, 2005-2006
+Software Engineer, ManBytesDog, 2004-2005
+Developer, Business Edge Systems, 2003-2004
+Developer, iGate Technologies, 2002-2003
+LEADERSHIP
+Grew Net-A-Porter’s Java team as second employee to 20+ team as team leader (2007+).
+Startup CTO, and oversaw a small team of permanent staff and contractors (2012).
+Engineering team lead at style.com (2016, Condé Nast).
+Mentorship as consultant (various clients, 2014 onwards)
+EDUCATION
+AI diploma from University of Johannesburg Applied Maths department (2001)
+MA Indie Game Development (distinction; Falmouth, 2022)
+NVidia certified: Data parallelism / multi-GPU; transformer-based NLP (NVidia, 2023)
+Deep learning specialisation; computational investing; big data; data analysis; etc (Coursera)
+Sun Certified Java programmer (Sun Microsystems, 2007)
+AWARDS
+London 2012 Startup Weekend winner with subsequent tenancy at Telefónica’s Wayra incubator (Pollarize)
+BT Technology Awards 2011 winner for best team (Net-A-Porter.com)
+2011 Hackday champion in which I made a mobile app with a fashion recommender backend (Net-A-Porter.com)
+TRIVIA
+Made the summit of Mt. Kilimanjaro
+Advanced scuba diver
+Guitarist & once a professional musician
+Gamedev (one can dream)
+Father of 2 lovely girls and husband to the best person on earth
+Afrikaans native, and understand written/spoken Dutch & Flemish

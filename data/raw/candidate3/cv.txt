@@ -24,7 +24,7 @@ Unleash Your Server (uys.io), Consultant (UK & remote)
 Contract developer across government, energy, finance, health and edtech. A mixture of Python/Node.js/JVM technologies. Clients include O2, Logic Group (Barclaycard) (via Equal Experts), Tesco, and others:
 receipt scanner (backend + ML) built from scratch for #1 customer insights organisation DunnHumby
 expand platform for new territories (France/Spain/Texas) for Bulb
-data aggregation from disparate sources to build a climate policy database for Climate Policy Radar CIC
+data aggregation from disparate sources to build a government contracts database for the FCDO
 engineering team lead at Condé Nast, expanding team and platform for style.com
 Earlier career, UK & South Africa — Developer & team lead
 2002 - 2012
@@ -51,9 +51,7 @@ London 2012 Startup Weekend winner with subsequent tenancy at Telefónica’s Wa
 BT Technology Awards 2011 winner for best team (Net-A-Porter.com)
 2011 Hackday champion in which I made a mobile app with a fashion recommender backend (Net-A-Porter.com)
 TRIVIA
-Made the summit of Mt. Kilimanjaro
-Advanced scuba diver
-Guitarist & once a professional musician
-Gamedev (one can dream)
-Father of 2 lovely girls and husband to the best person on earth
+5th place at British Touring Car Championship 2019
+Avid petrolhead
+Do auto modifications in my spare time
 Afrikaans native, and understand written/spoken Dutch & Flemish

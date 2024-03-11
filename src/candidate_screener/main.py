@@ -1,5 +1,6 @@
 import os
 import pathlib
+from pathlib import Path
 
 import anthropic
 import tiktoken
@@ -9,7 +10,8 @@ load_dotenv(find_dotenv())
 
 # get cwd using pathlib
 cwd = pathlib.Path(__file__).parent.absolute()
-# cwd / ".." / "data/raw/company/about.txt"
+# print(cwd)
+# cwd / ".." / "data/raw/company1/about.txt"
 
 
 client = anthropic.Anthropic(
@@ -18,12 +20,12 @@ client = anthropic.Anthropic(
 )
 
 
-def predict_claude(prompt: str) -> str:
+def predict_claude(prompt: str, system_prompt: str) -> str:
     message = client.messages.create(
         model="claude-3-opus-20240229",
         max_tokens=1000,
         temperature=0,
-        system="You are a recruiter tasked with establishing whether a candidate is a good fit for a role at a given company.",
+        system=system_prompt,
         messages=[
             {
                 "role": "user",
@@ -37,7 +39,7 @@ def predict_claude(prompt: str) -> str:
 def _load_files_from_dictionary(data: dict) -> dict:
     data_copy = data.copy()
     for key, file_name in data.items():
-        abs_file = cwd / ".." / file_name
+        abs_file = cwd / ".." / ".." / file_name
         with open(abs_file, "r") as file:
             data_copy[key] = file.read().strip()
     return data_copy
@@ -60,32 +62,32 @@ def _load_entity(data: dict) -> str:
     return loaded_text
 
 
-def load_company():
+def load_company(company_name: str = "company1"):
     # load the company data
     company_data = {
-        "about": "data/raw/company/about.txt",
-        "homepage": "data/raw/company/homepage.txt",
-        "leadership": "data/raw/company/leadership.txt",
-        "working_here": "data/raw/company/working_here.txt",
+        "about": f"data/raw/{company_name}/about.txt",
+        "homepage": f"data/raw/{company_name}/homepage.txt",
+        "leadership": f"data/raw/{company_name}/leadership.txt",
+        "working_here": f"data/raw/{company_name}/working_here.txt",
     }
 
     return _load_entity(company_data)
 
 
-def load_job():
+def load_job(company_name: str = "company1"):
     # load the job data
     job_data = {
-        "job_description": "data/raw/company/job_description.txt",
+        "job_description": f"data/raw/{company_name}/job_description.txt",
     }
 
     return _load_entity(job_data)
 
 
-def load_candidate():
+def load_candidate(candidate_name: str = "candidate1"):
     # load the candidate data
     candidate_data = {
-        "cv": "data/raw/candidate/cv.txt",
-        "cover_letter": "data/raw/candidate/cover_letter.txt",
+        "cv": f"data/raw/{candidate_name}/cv.txt",
+        "cover_letter": f"data/raw/{candidate_name}/cover_letter.txt",
     }
 
     return _load_entity(candidate_data)
@@ -98,21 +100,6 @@ inability to capture candidate potential (15.5%)
 over-reliance on historical data (15.5%)
 
 Modify the prompt to take care of the above issues.
-"""
-
-PROMPT_TEMPLATE = """The candidate wants to apply for this job with this company. Please establish whether the following candidate and company are a good fit for each other, and whether the candidate is a good fit for the job.
-
-<company>
-{company_text}
-</company>
-
-<job_description>
-{job_description_text}
-</job_description>
-
-<candidate>
-{candidate_text}
-</candidate>
 """
 
 # education, skills, experience, culture fit, work ethic, problem-solving abilities, leadership potential, adaptability, communication skills, teamwork, innovation & creativity, emotional intelligence
@@ -131,17 +118,42 @@ attributes = [
     "emotional intelligence",
 ]
 
+PROMPT_TEMPLATE = """The candidate wants to apply for this job with this company. Please establish whether the following candidate and company are a good fit for each other, and whether the candidate is a good fit for the job.
+Match the candidate of each of the following 3 attributes: education, skills, experience. Use YAML formatting, e.g.:
+education:
+  match: value between 0 and 1
+  reason: "The candidate has a degree in X"
+skills:
+  match: value between 0 and 1
+  reason: "The candidate has experience with X"
+experience:
+  match: value between 0 and 1
+  reason: "The candidate has worked on X"
 
-def main():
-    company_text = load_company()
+<company>
+{company_text}
+</company>
+
+<job_description>
+{job_description_text}
+</job_description>
+
+<candidate>
+{candidate_text}
+</candidate>
+"""
+
+
+def get_match(company_name: str = "company1", candidate_name: str = "candidate1"):
+    company_text = load_company(company_name)
     company_token_len = _count_tokens(company_text)
     print(f"Company token length: {company_token_len}")
 
-    candidate_text = load_candidate()
+    candidate_text = load_candidate(candidate_name)
     candidate_token_len = _count_tokens(candidate_text)
     print(f"Candidate token length: {candidate_token_len}")
 
-    job_text = load_job()
+    job_text = load_job(company_name)
     job_token_len = _count_tokens(job_text)
     print(f"Job token length: {job_token_len}")
 
@@ -153,13 +165,14 @@ def main():
     prompt_token_len = _count_tokens(prompt)
     print(f"Prompt token length: {prompt_token_len}")
 
-    response = predict_claude(prompt)
+    system_prompt = "You are a recruiter tasked with establishing whether a candidate is a good fit for a role at a given company."
+    response = predict_claude(prompt, system_prompt)
     return response
 
 
-response = main()
-print(len(response))
-print(response[0].text)
+# response = get_match()
+# print(len(response))
+# print(response[0].text)
 
 """
 Based on the information provided, there seems to be a good fit between the candidate, Juan Uys, and the company, Climate Policy Radar, for the Machine Learning Engineer role. Here's why:
