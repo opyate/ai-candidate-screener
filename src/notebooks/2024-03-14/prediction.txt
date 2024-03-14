@@ -1,0 +1,61 @@
+Here is my assessment of the candidate's fit for the job and company:
+
+<match>
+education:
+  match: 0.8
+  reason: "The candidate has relevant education in AI and machine learning, including an AI diploma and NVidia certifications in data parallelism, multi-GPU computing, and transformer-based NLP. While not a strict requirement, this aligns well with the ML and NLP skills needed for the role."
+
+skills:
+  match: 0.9
+  reason: "The candidate has highly relevant skills in machine learning, AI, LLMs, NLP, and AWS, which match the key requirements for the role. Experience with .NET is lacking but the job description notes other languages like Python are acceptable, which the candidate is proficient in."
+
+experience:
+  match: 0.95
+  reason: "With 20+ years of experience, including 10+ years as an independent ML consultant working on document understanding and data extraction projects, the candidate brings highly relevant experience. Work on reducing quote processing time and structured data extraction align closely with the role. Experience delivering end-to-end solutions is also a plus."
+
+"culture fit":
+  match: 0.8
+  reason: "The candidate's passion for machine learning and clear communication align with the company's commitment to excellence and truth-seeking in climate data and policy. Independent work and leadership experience fit the startup environment. No obvious misalignments with the company's collaborative, transparent and emotionally intelligent culture."
+
+"work ethic":
+  match: 0.9
+  reason: "Holding multiple certifications and awards demonstrates a strong work ethic and drive for excellence and continuous learning, in line with the company's values. Founding a startup and juggling multiple consulting projects also shows strong work ethic."
+
+"problem-solving abilities":
+  match: 0.9
+  reason: "Relevant projects like building a receipt scanner from scratch and expanding platforms to new territories demonstrate solid problem-solving skills in the ML and data domains. Winning hackathons and startup competitions also points to creative problem-solving abilities."
+
+"leadership potential":
+  match: 0.85
+  reason: "The candidate has grown and led engineering teams in past roles, founded a startup as CTO, and mentored as a consultant, showing clear leadership potential, even if not a primary focus currently. Could potentially grow into a leadership role longer-term."
+
+adaptability:
+  match: 0.9
+  reason: "Having worked across many industries as a consultant and adapted to different tech stacks and domains demonstrates strong adaptability. Quickly picking up new ML techniques and models also shows the ability to adapt and learn."
+
+"communication skills":
+  match: 0.7
+  reason: "The candidate mentions clearly communicating to stakeholders and the cover letter is direct and to-the-point. However, it is a bit brief to fully assess communication skills. Prior leadership roles imply decent communication abilities."
+
+teamwork:
+  match: 0.8
+  reason: "Extensive experience working with and leading teams in both permanent and consulting roles demonstrates the ability to collaborate effectively. However, recent work seems more independent, so the candidate may prefer solo projects."
+
+"innovation & creativity":
+  match: 0.85
+  reason: "Researching and applying cutting-edge ML techniques like prompt chaining and mixtures of experts shows the candidate stays on top of innovations in the field. Winning hackathons and awards also demonstrates creativity."
+
+"emotional intelligence":
+  match: 0.75
+  reason: "Hard to assess directly, but no red flags in the CV or cover letter. Leadership experience and client-facing consulting roles imply a degree of emotional intelligence required to navigate interpersonal situations effectively."
+</match>
+
+<summary>
+In summary, this candidate appears to be a very strong fit for both the Machine Learning Engineer role and the overall mission and culture of Climate Policy Radar. 
+
+The candidate brings highly relevant skills and experience in machine learning, natural language processing, and data extraction that align closely with the technical requirements of the role. Experience with large language models, prompt engineering, and fine-tuning for structured extraction use cases is especially applicable. Proficiency in Python and cloud platforms like AWS is also a plus, even if the candidate lacks .NET experience.
+
+From a cultural perspective, the candidate's passion for machine learning, drive for excellence, and commitment to continuous learning resonate with Climate Policy Radar's values. The candidate's clear communication, emotional intelligence, and prior leadership experience would likely enable them to collaborate effectively with the team and potentially grow into a leadership role in the future.
+
+While the cover letter is a bit brief to fully assess communication skills and cultural alignment, overall the candidate demonstrates strong potential to deliver on the role and integrate well with the mission-driven, innovative and collaborative culture at Climate Policy Radar. I would recommend moving this candidate forward to an interview to further assess fit.
+</summary>

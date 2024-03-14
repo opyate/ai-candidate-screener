@@ -1,0 +1,260 @@
+Please establish whether the following candidate and company are a good fit for each other, and whether the candidate is a good fit for the job.
+
+The company's data is inside the <company></company> tag, and the job that the company is hiring for is inside the <job_description></job_description> tag.
+
+The candidate's data is split into CV as per the <candidate_cv></candidate_cv> tag, cover letter as per the <candidate_cover_letter></candidate_cover_letter> tag, and extra text as per the <candidate_extra_text></candidate_extra_text> tag. The extra text can include any additional information about the candidate that might be relevant, and that isn't included in the CV or cover letter, like the text from their website's About page.
+
+Match the candidate on each of the following attributes: education, skills, experience, culture fit, work ethic, problem-solving abilities, leadership potential, adaptability, communication skills, teamwork, innovation & creativity and emotional intelligence.
+A few extra notes about some of the attributes:
+- education: If the company doesn't require any specific educational requirements, then the candidate's education is less important. However, if the company has a specific requirement, like a degree or diploma, the candidate's education is more important, and a suitable match ranking need to be predicted.
+- skills: The candidate's skills are important to match with the company's requirements. If the candidate has the exact required skills, the match can be ranked 1.0. If a candidate has adjacent skills that are quite similar to the required skills, the match can be ranked lower than 1.0, but still highly. If the candidate has no relevant skills, the match can be ranked lower.
+- experience: Pay special attention to whether the company explicitly requires experience in any specific industries, technologies, or tools, and rank accordingly. However, if the company is not specific about the required experience, and the candidate doesn't have a lot of experience, then other factors can be taken into account to support a candidate's experience, like the candidate's side-projects, hobbies, or similar activities.
+- culture fit: Pay special attention to culture fit, as a candidate might have viewpoints or hobbies which are at odds with the company's culture, mission, and values.
+
+Please give detailed reasons for your match scores for each of the attributes.
+
+Use YAML formatting and wrap with a <match></match> tag, e.g.:
+<match>
+education:
+  match: value between 0 and 1
+  reason: "The candidate has a degree in X, which is good/bad, because the company wants Y"
+"communication skills":
+  match: value between 0 and 1
+  reason: "Judging by the candidate's fluency with words in their cover letter, and their structured approach to their CV, they seem to have good communication skills."
+further_attributes:
+  match: value between 0 and 1
+  reason: "etc"
+</match>
+
+And then finally, produce a summary, wrapped in a <summary></summary> tag, of the candidate's overall suitability for the job, and their overall suitability for the company.
+
+Here is the data:
+
+<company>
+We are on a mission to map and analyse the global climate law and policy landscape
+By supporting evidence-based laws and policies, our vision is to accelerate the transition to a low-carbon, resilient and just world.
+
+- We are led by a team of international climate change law and policy and machine learning experts, bridging the climate and tech worlds.
+- Climate Policy Radar is built on a decade of experience leading research and resource development on global climate laws and policies at the London School of Economics and Political Science, serving policymakers, researchers and civil society worldwide.
+- We believe in collaboration, not competition, and we actively seek out partners who share our ambition and values.
+
+Our Values
+Moonshot intention with grounded urgent action
+
+We seek to bring about meaningful change towards a better future, using data effectively to make a difference to people and planet.
+
+In particular, we want to influence and change the way evidence informs policy and investment decisions. While this is a marathon, and we’re in it for the long haul, the urgency of the challenge means we are committed to sprints and to achieving short term goals, without losing sight of our long term mission.
+
+Excellence
+
+We strive to be excellent at what we do and how we do it.
+
+Holding ourselves to the highest standard of research and development, operations, management and engagement with our stakeholders.
+
+Truth Seeking
+
+We will be honest and act with integrity in the data we produce and the way that we communicate what it means.
+
+We will make an active effort to avoid bias in all our practices and importantly, in the way we collect, curate and communicate data. We will be dispassionate about any given course of action as long as there is evidence to show its effectiveness - there are no silver bullets.
+
+Transparency
+
+We will make our data, analyses and platform available for others to use and build on.
+
+We will be open about how we work and what we do, and explain our data and analyses clearly using language that is readily understood by our target audiences. We will be leaders in open sourcing climate data and contributing to open source efforts globally.
+
+Learning and experimenting
+
+We seek to continuously learn and improve ourselves and our organisation and to advance a culture of evidence-based decision making
+
+Through constant learning from others’ successes, mistakes and through innovation and experimentation where things have not been tried before. We embrace failure, will interrogate our mistakes openly, and try and improve on our weaknesses.
+
+Emotional intelligence
+
+We are committed to intelligent and empathic communication with our team, stakeholders, and audiences.
+
+We will be honest, reliable, approachable, and practice generosity and integrity in all our dealings with others, both in Climate Policy Radar and externally.
+
+Bridge building and collaboration
+
+We take a radical collaboration approach to our work - both internally and externally. We do not view other people and organisations as competitors, but rather as allies.
+
+Everyone in the team will contribute their unique skills, insights and work with others to maximise synergies. We will build links with the broad climate change community, and collaborate and integrate with other climate change data providers and organisations.
+
+Building the evidence base for evidence-based decision-making
+
+We build tools that open up the messy black box of climate laws, policies and case law globally, helping decision-makers design more effective climate change strategies.
+Use our tools to quickly and easily find information on climate laws and policies.
+Open data and tools for climate policy and law research
+
+- Explore: Search through the complete text of thousands of climate change policy and law documents from every country.
+- Research: Easily find parts of documents that are relevant to what you’re looking for. Our AI tool saves time by automatically detecting and highlighting similar words.
+- Analyse: Compare different nations’ climate action plans, and explore climate laws and policies by sector.
+
+We are on a mission to map and analyse the global climate law and policy landscape to help drive the transition to a low-carbon, resilient and just world.
+
+The need for informed climate change policymaking
+
+Laws and policies are essential to slashing global emissions, building climate-resilient, adaptive communities and economies, and accounting for loss and damage from climate impacts.
+
+Yet data on existing climate policies and laws are currently hard to find and analyse. Documents and data are spread across diffuse resources in different languages, in inconsistent formats. This makes it difficult to learn from successes and mistakes and to develop ambitious ways forward.
+
+We are working to open up and make sense of that data to support informed policymaking, track progress and model policy risk. Use our open data tools for:
+
+- Policymaking: Carry out deep dives into a wide range of areas, assess policy options and identify best practices.
+- Policy tracking: Track global action and progress towards meeting the goals of the Paris Agreement.
+- Accountability: Assess policy choices, draw attention to insufficient action, and advocate for alternatives.
+- Risk modelling: Build law and policy metrics into risk models, and gain a better understanding of the regulatory environment.
+
+AI for climate law and policy research
+
+We use data science and artificial intelligence to map and analyse the world's climate change policies and laws, supporting a deep understanding of what works, where, and for whom.
+
+By turning documents into searchable, accessible and useful information, our work aims to advance global research efforts to understand the effectiveness of climate laws, policies and litigation.
+
+- Aggregate and sort: Bringing climate policy data together from diffuse resources - from government websites to climate negotiation documents.
+- Digest and analyse: Training AI algorithms to extract useful information from climate documents. This will help to pinpoint trends and highlight action gaps.
+- Expose and share: Building an open knowledge graph to map this information. This will enable climate policy evaluation, analysis and modelling. And ultimately, help to guide better decision-making.
+
+About Climate Policy Radar
+
+Climate Policy Radar is a not-for-profit climate startup. We are led by a team of leading experts in international climate law and policy, machine learning and software development.
+
+Michal Nachmany, PhD
+Founder and CEO
+
+Michal is an international climate policy and governance expert with a background in law, finance, and multinational project management. Before founding Climate Policy Radar, she spent a decade at the Grantham Research Institute, LSE, where she led the work on the Institute’s structured datasets and tools, building evidence-based decision-making tools for national legislation and policy and low-carbon investment.
+
+She is a Fellow of the Royal Society of Arts and the UNFCCC Resilience Frontiers and a founding member of the Climate Tech Council Founders forum. Michal is also a member of the Coalition for Digital Environmental Sustainability and of the Camda Community for credible climate action. She was previously the team lead at the Transition Pathway Initiative, and an advisor to Climate Action 100+, an investor coalition with over $55 trillion AUM. Michal is a speaker on climate policy and action with diverse audiences, with regular appearances on national and international media.
+
+Michal holds a PhD from the London School of Economics. Her research explored the global diffusion of climate change policies, and the contribution of global networks to advancement of policies. She also has an MA (cum laude) in Energy Policy and Management from the University of Haifa, and an LLB in Law as well as an MBA, specialising in finance, from the Hebrew University of Jerusalem.
+
+Henry Franks, PhD
+CTO
+
+Henry is a technology and product leader with over a decade of experience building startups deploying innovative data- and machine learning-dense products
+
+Leveraging expertise in computer science, software engineering, data science and machine learning, Henry holds an MEng and PhD in Computer Science from the University of Warwick (involving research into the nature of cooperation in society and application of those insights to algorithmic societies).
+
+Henry has worked on products involving search, topic modelling, time series analytics, risk modelling, and IoT data at high scale, and is a guest lecturer on AI ethics and regulation at the Dickson Poon School of Law KCL and Notre Dame University.
+
+Join us to build tools that help inform better decisions
+
+Working at Climate Policy Radar
+
+- High impact: A high impact and exciting mission at the intersection of technology, AI and policy. A chance to co-create and help us shape our journey ‒ we are building our team and vision, so your input and impact will be significant.
+- Larger community: Access to a larger community of climate and data enthusiasts ‒ we are a member of Subak, an accelerator and cooperative for climate non-profit startups, and enjoy a joint programme of learning, collaborating and socialising.
+- Commitment to your wellbeing: A deep commitment to our employees’ mental and physical wellbeing. Among others we offer unlimited leave, flexible work hours, a generous wellbeing allowance, short Fridays, and great coffee. Hybrid work arrangement: stunning work space overlooking Westminster Bridge, combined with remote working.
+</company>
+
+<job_description>
+About the job
+
+Machine Learning Engineer – AI, LLM, Machine Learning, AWS, NLP
+
+
+Outside IR35 | Remote (UK only) | 6 Month Contract | Rate dependent on experience
+
+
+My client urgently requires an AI/ Machine Learning Engineer to assist them in building a data extraction tool. Some exploration work has been done already but the project is still in initial stages, meaning you will have a pivotal role in shaping the strategy and execution.
+
+
+This role is most suited to someone who has previous experience working with AI and LLM tools within AWS and has prior experience delivering an end-to-end software solution. The breakdown or the role will be 25% strategy defining and 75% hands on development.
+
+
+Key Experience required:
+
+    Machine Learning 
+    AI & LLM
+    AWS 
+    NLP (Natural Language Processing)
+    Developing proof of concept
+    End to end software life-cycle
+    .Net - highly beneficial but not essential, other languages such as python are also okay
+
+
+We are keen to move forward with this role ASAP and arrange interviews over the next week, so please apply ASAP if this role meets your skill set and you’d like to discuss the project further.
+
+
+
+
+AI, LLM, Machine Learning, AWS, NLP (Natural Language Processing), Development, Project, Data extraction
+</job_description>
+
+<candidate_cv>
+Juan Uys
+Python Lead & ML Engineer (NVidia certified)
+Cheltenham, UK, (+44) 7702 783 956, juan+cv@uys.io
+https://www.linkedin.com/in/juan-m-uys/ 
+ABOUT
+20+ years experience and effective pattern matcher. I focus on what matters, and clearly communicate to stakeholders.
+Independent consultant for 10+ years, latterly with a focus on document understanding and data extraction
+EXPERIENCE
+pdfcrun.ch, Founder
+NOVEMBER 2013 - CURRENT
+“pdfcrunch turns PDFs into data”
+Document data extraction bespoke solutions, and consulting.
+Part of the NVidia Inception programme.
+Python and ML technologies; CV and NLP; on AWS and GCP.
+cytora.com, Consultant/ML Developer (remote)
+MARCH 2023 - JANUARY 2024
+Document understanding and data extraction. Reducing risk quote processing time, “RiskGPT”. Self-directed work and research, working with a small team.
+research into smaller open-source models for specific extraction tasks (3b-7b parameter models, applied: dolly; research: llama(+derivatives)/mistral/mixtral, mixtures of experts)
+prompt engineering (applied: zero/few-shot, chain-of-thought; research: prompt chaining, automatic reasoning, auto prompts, function calling)
+fine-tuning large foundational models (applied: Google's PaLM2/Vertex, Databricks; research: Amazon Bedrock) with applications in structured data extraction (fields, addresses), and singular field extraction ("single field experts")
+research into layout detection (LayoutXLM trained with DocLayNet/PubLayNet)
+Unleash Your Server (uys.io), Consultant (UK & remote)
+2013 - PRESENT
+Contract developer across government, energy, finance, health and edtech. A mixture of Python/Node.js/JVM technologies. Clients include O2, Logic Group (Barclaycard) (via Equal Experts), Tesco, and others:
+receipt scanner (backend + ML) built from scratch for #1 customer insights organisation DunnHumby
+expand platform for new territories (France/Spain/Texas) for Bulb
+data aggregation from disparate sources to build a government contracts database for the FCDO
+engineering team lead at Condé Nast, expanding team and platform for style.com
+Earlier career, UK & South Africa — Developer & team lead
+2002 - 2012
+Web developer and team lead in various industries including internet advertising, fashion, and consumer apps. Predominantly a backend Java developer. Programmer #2 at a startup which Google acquired (BeatThatQuote.com).
+CTO & Co-Founder, Pollarize.me, 2012-2013
+Senior Java Developer & Team Lead, Net-A-Porter.com, 2007-2013
+Software Engineer, BeatThatQuote.com, 2005-2006
+Software Engineer, ManBytesDog, 2004-2005
+Developer, Business Edge Systems, 2003-2004
+Developer, iGate Technologies, 2002-2003
+LEADERSHIP
+Grew Net-A-Porter’s Java team as second employee to 20+ team as team leader (2007+).
+Startup CTO, and oversaw a small team of permanent staff and contractors (2012).
+Engineering team lead at style.com (2016, Condé Nast).
+Mentorship as consultant (various clients, 2014 onwards)
+EDUCATION
+AI diploma from University of Johannesburg Applied Maths department (2001)
+MA Indie Game Development (distinction; Falmouth, 2022)
+NVidia certified: Data parallelism / multi-GPU; transformer-based NLP (NVidia, 2023)
+Deep learning specialisation; computational investing; big data; data analysis; etc (Coursera)
+Sun Certified Java programmer (Sun Microsystems, 2007)
+AWARDS
+London 2012 Startup Weekend winner with subsequent tenancy at Telefónica’s Wayra incubator (Pollarize)
+BT Technology Awards 2011 winner for best team (Net-A-Porter.com)
+2011 Hackday champion in which I made a mobile app with a fashion recommender backend (Net-A-Porter.com)
+TRIVIA
+5th place at British Touring Car Championship 2019
+Avid petrolhead
+Do auto modifications in my spare time
+Afrikaans native, and understand written/spoken Dutch & Flemish
+</candidate_cv>
+<candidate_cover_letter>
+Hello,
+
+I’m Juan Uys, I live in Cheltenham with my wife and 2 daughters.
+
+I am very passionate about machine learning, and hope to be a great addition to your team.
+
+I very much look forward to hearing back,
+
+Juan
+07702 783 956
+juan@uys.io
+</candidate_cover_letter>
+<candidate_extra_text>
+
+</candidate_extra_text>
+
+Note: discrimination is illegal.
