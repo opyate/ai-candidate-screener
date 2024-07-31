@@ -38,3 +38,7 @@ methodology:
 - mine
 - https://sites.google.com/view/fellycikaya/about-me/my-cv
 - https://theone9807.github.io/
+
+# DB-data-driven CV
+
+Started here: https://chatgpt.com/share/767e177f-9cea-43e8-ac58-21ee55d57ec2
